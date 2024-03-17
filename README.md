@@ -1,40 +1,62 @@
+# Plant 🌱 Disease 🐛 Detection 🔎
 
-# Crop Disease Detection System using Convolutional Neural Network (CNN)
+Plant Disease Detection is an innovative machine learning project that harnesses the power of Convolutional Neural Networks (CNN) and deep learning techniques to identify and classify diseases in plants. The primary objective is to offer farmers and agricultural experts a valuable tool for swift plant health diagnosis, facilitating timely intervention and minimizing the risk of crop loss.
 
-## Description
-This project aims to detect crop diseases using Convolutional Neural Networks (CNN). It leverages deep learning techniques to analyze images of crops and classify them based on whether they are healthy or affected by diseases. By automating disease detection, farmers can take timely action to protect their crops and improve agricultural yield.
+[**Live Demo**](https://saurabhsinghdhami-plant-disease-detection-main-app-p8d5ks.streamlit.app/)
 
-## Team Members
-- Bellamkonda Venkata Sai Sriram Harsha
-- Sudha Siva Kumar Reddy
-- Pala Yuva Charan
-- Motapothula Chandhu
+## Project Structure 📂
 
-## Problem it Solves
-The project addresses the challenge of early detection of crop diseases, which is crucial for farmers to prevent widespread damage and ensure better crop management practices. It enables quick and accurate identification of diseased plants, leading to targeted interventions and improved agricultural productivity.
+The project comprises essential components:
 
-## Use Cases
-1. Farmers can upload images of their crops to the system for disease diagnosis.
-2. Agricultural experts can use the system for rapid and accurate disease identification during field visits.
-3. Researchers can analyze the data collected by the system to study disease patterns and develop new solutions.
+- `Plant_Disease_Detection.ipynb`: Jupyter Notebook with the code for model training.
+- `main_app.py`: Streamlit web application for plant disease prediction.
+- `plant_disease_model.h5`: Pre-trained model weights.
+- `requirements.txt`: List of necessary Python packages.
 
-## Challenges Faced
-1. Acquiring a diverse dataset of crop images with labels for training the CNN model.
-2. Fine-tuning the CNN architecture and hyperparameters for optimal performance.
-3. Integrating the backend system with the frontend interface for user-friendly interactions.
+## Installation 🚀
 
-## Demo Video
-[YouTube Demo Video](insert_youtube_link_here) (Uploaded as an unlisted video)
+To run the project locally, follow these steps:
 
-## Steps to Test the Project
-1. Clone the repository to your local machine.
-2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Run the project using appropriate commands based on your backend and frontend setup.
-4. Access the system through your web browser at the specified URL.
+1. **Clone the repository:**
 
-## Technologies Used
-- Python
-- TensorFlow/Keras (for CNN implementation)
-- Flask (for backend)
-- Streamlit (for frontend)
-- Git (for version control)
+```bash
+git clone https://github.com/SAURABHSINGHDHAMI/Plant-Disease-Detection.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd Plant-Disease-Detection
+```
+
+3. **Install the required packages:**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Run the Streamlit web application:**
+
+```bash
+streamlit run main_app.py
+```
+
+## Usage 🌿
+
+Once the application is running, open your web browser and navigate to [http://localhost:8501](http://localhost:8501). Upload an image of a plant leaf, and the system will predict if it is affected by any disease.
+
+## Model Training 🧠
+
+The model was trained using the `Plant_Disease_Detection.ipynb` notebook. It employs a Convolutional Neural Network architecture to classify plant images into different disease categories. The trained model weights are saved in `plant_disease_model.h5`.
+
+## Web Application 🌐
+
+The web application (`main_app.py`) empowers users to interact with the trained model. Upload plant images, and the application provides real-time predictions regarding the health of the plant.
+
+## Requirements 🛠️
+
+- Keras==2.8.0
+- numpy==1.21.4
+- streamlit==1.18.0
+- opencv-python-headless==4.5.3
+- tensorflow==2.7.0
